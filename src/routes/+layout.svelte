@@ -46,37 +46,11 @@
 </script>
 
 <svelte:head>
-	<title>RIEMANN THETA</title>
+	<title>Prime Counts</title>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="AUFBAU" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<!-- <link rel="preload" href="/aufbau.svg" as="image" type="image/svg+xml" crossorigin="anonymous" /> -->
-
-	<!-- <link
-		rel="preload"
-		href="/fonts/NB-Architekt-Pro-Light.woff"
-		as="font"
-		type="font/woff"
-		crossorigin="anonymous"
-	/> -->
-
-	<!-- <link
-		rel="preload"
-		href="/fonts/NB-Architekt-Pro-Bold.woff"
-		as="font"
-		type="font/woff"
-		crossorigin="anonymous"
-	/> -->
-
-	<!-- <link
-	rel="preload"
-	href="/fonts/Dahlia-Medium.woff2"
-	as="font"
-	type="font/woff2"
-	crossorigin="anonymous"
-/> -->
 </svelte:head>
 
 {#if Geometry}

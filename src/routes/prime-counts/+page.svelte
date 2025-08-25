@@ -1,12 +1,6 @@
 <script>
 </script>
 
-<!-- <section>
-	<div class="main">
-		<a href="https://niels.aufbau.io" target="_blank" rel="noreferrer">// visit niels</a>
-	</div>
-</section> -->
-
 <style>
 section {
   padding: 0 0;

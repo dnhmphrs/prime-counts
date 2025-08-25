@@ -1,48 +1,32 @@
 <script>
 	import Nav from './nav.svelte';
 	import { page } from '$app/stores';
-	import Matrix from './matrix.svelte';
-	// import { darkMode, screenType } from '$lib/store/store';
 
-	// import { page } from '$app/stores';
-	// import { goto } from '$app/navigation';
-
-	$: showMatrix = ['/', '/theta-imaginary', '/kp-equation', '/tangent-lattice'].includes(
+	// Prime-focused routes that show the matrix
+	$: showMatrix = ['/', '/prime-simple', '/prime-interactive'].includes(
 		$page.url.pathname
 	);
 
-	// stub data out
+	// Prime circle navigation items
 	const navItems = [
 		{
-			name: 'Riemann Theta - Mobius - Real Part (N=2)',
+			name: 'Prime Circles - Full Resolution',
 			href: '/'
 		},
 		{
-			name: 'Riemann Theta - Imaginary Part (N=2)',
-			href: '/theta-imaginary'
+			name: 'Prime Circles - Simple (Performance)',
+			href: '/prime-simple'
 		},
 		{
-			name: 'KP Equation (N=2)',
-			href: '/kp-equation'
-		},
-		{
-			name: 'Theta - Tangent Lattice (N=1)',
-			href: '/tangent-lattice'
+			name: 'Prime Circles - Interactive',
+			href: '/prime-interactive'
 		}
 	];
-
-	// let toggleDarkMode = () => {
-	// 	darkMode.set(!$darkMode);
-	// 	document.querySelector(':root').classList.toggle('dark-mode');
-	// 	};
 </script>
 
 <header>
 	<main>
 		<div />
-		{#if showMatrix}
-			<Matrix />
-		{/if}
 		<Nav {navItems} />
 	</main>
 </header>

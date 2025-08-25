@@ -1,12 +1,6 @@
 <script>
 </script>
 
-<!-- <section>
-	<div class="main">
-		<p>WIP</p>
-	</div>
-</section> -->
-
 <style>
 section {
   padding: 0 0;
@@ -37,7 +31,7 @@ section {
 		padding:  20px;
 	}
 
-	.main a, .main p {
+	.main a {
 		padding: 10px;
 		border: solid 1px var(--background);
 		background:  var(--background);
